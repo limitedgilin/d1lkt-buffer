@@ -1578,6 +1578,12 @@ config MSM_CPU_AVS
 	  in Qualcomm ARMv7 CPUs. It adjusts the voltage for each frequency
 	  based on feedback from three ring oscillators in the CPU.
 
+config CPU_VOLTAGE_TABLE
+	bool "Enable CPU Voltage Table via sysfs for adjustements"
+	default n
+	help
+	  Krait User Votlage Control
+
 config MSM_AVS_HW
 	bool "Enable Adaptive Voltage Scaling (AVS)"
 	default n
@@ -2467,4 +2473,30 @@ config MSM_HSIC_SYSMON_TEST
 	  can be read and written to send character data to the sysmon port of
 	  the modem over USB.
 
+config FORCE_FAST_CHARGE
+  bool "Force AC charge mode at will"
+  default y
+  help
+    A simple sysfs interface to force adapters that
+    are detected as USB to charge as AC.
+config GPU_OVERCLOCK
+       bool "Enable GPU Overclocking option"
+       default t
+       help
+          Adreno2xx overclocking up to 480 MHz
+config INTELLI_PLUG
+       bool "Enable intelli-plug cpu hotplug driver"
+       default n
+       help
+         Generic Intelli-plug cpu hotplug driver for ARM SOCs
+config CPU_OVERCLOCK
+	bool "Enable CPU Overclocking option"
+	default y
+	help
+	  acpuclock8960(msm8960) overclock to 1728 MHz
+config LOW_CPU_CLOCK
+	bool "Enable CPU Low clock option"
+	default y
+	help
+	  acpuclock8960(msm8960) low clocks
 endif
