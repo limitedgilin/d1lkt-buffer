@@ -1580,7 +1580,7 @@ config MSM_CPU_AVS
 
 config CPU_VOLTAGE_TABLE
 	bool "Enable CPU Voltage Table via sysfs for adjustements"
-	default n
+	default y
 	help
 	  Krait User Votlage Control
 
@@ -2481,12 +2481,12 @@ config FORCE_FAST_CHARGE
     are detected as USB to charge as AC.
 config GPU_OVERCLOCK
        bool "Enable GPU Overclocking option"
-       default t
+       default y
        help
           Adreno2xx overclocking up to 480 MHz
 config INTELLI_PLUG
        bool "Enable intelli-plug cpu hotplug driver"
-       default n
+       default y
        help
          Generic Intelli-plug cpu hotplug driver for ARM SOCs
 config CPU_OVERCLOCK

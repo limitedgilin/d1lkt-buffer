@@ -161,7 +161,6 @@ static struct acpu_level acpu_freq_tbl_slow[] __initdata = {
 #ifdef CONFIG_CPU_OVERCLOCK
 	{ 1, {  1620000, HFPLL, 1, 0, 0x3C }, L2(18), 1275000 },
 	{ 1, {  1728000, HFPLL, 1, 0, 0x3E }, L2(18), 1300000 },
-	{ 1, {  1836000, HPFLL, 1, 0, 0x40 }, L2(18), 1325000 },
 #endif
 	{ 0, { 0 } }
 };
